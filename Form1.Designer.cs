@@ -1,6 +1,6 @@
 ﻿namespace EchoMessenger
 {
-    partial class Form1
+    partial class ＥｏｃｈｏＭｅｓｓｅｎｇｅｒ
     {
         /// <summary>
         ///  Required designer variable.
@@ -108,11 +108,12 @@
             btnClear.UseVisualStyleBackColor = true;
             btnClear.Click += btnClear_Click;
             // 
-            // Form1
+            // ＥｏｃｈｏＭｅｓｓｅｎｇｅｒ
             // 
             AcceptButton = btnSend;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(255, 255, 128);
             ClientSize = new Size(800, 450);
             Controls.Add(btnClear);
             Controls.Add(btnDelete);
@@ -121,8 +122,10 @@
             Controls.Add(lstHistory);
             Controls.Add(label1);
             Controls.Add(btnSend);
-            Name = "Form1";
-            Text = "Form1";
+            ForeColor = Color.Transparent;
+            Name = "ＥｏｃｈｏＭｅｓｓｅｎｇｅｒ";
+            Text = "ＥｏｃｈｏＭｅｓｓｅｎｇｅｒ";
+            Load += ＥｏｃｈｏＭｅｓｓｅｎｇｅｒ_Load;
             ResumeLayout(false);
             PerformLayout();
         }

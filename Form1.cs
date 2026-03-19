@@ -1,8 +1,8 @@
 namespace EchoMessenger
 {
-    public partial class Form1 : Form
+    public partial class ＥｏｃｈｏＭｅｓｓｅｎｇｅｒ : Form
     {
-        public Form1()
+        public ＥｏｃｈｏＭｅｓｓｅｎｇｅｒ()
         {
             InitializeComponent();
         }
@@ -19,8 +19,8 @@ namespace EchoMessenger
             {
                 return;
             }
-            
-            if (string.IsNullOrWhiteSpace(userInput)) return; 
+
+            if (string.IsNullOrWhiteSpace(userInput)) return;
             string timeStamp = DateTime.Now.ToString("HH:mm:ss");
             string formattedMessage = $"[{timeStamp}] {userInput}";
             lstHistory.Items.Add(formattedMessage);
@@ -60,6 +60,11 @@ namespace EchoMessenger
 
             // 카운트 초기화
             lblCount.Text = "현재 대화 : 0개";
+        }
+
+        private void ＥｏｃｈｏＭｅｓｓｅｎｇｅｒ_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
