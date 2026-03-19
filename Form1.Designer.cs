@@ -86,9 +86,11 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(594, 59);
+            btnDelete.Font = new Font("새굴림", 12F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            btnDelete.ForeColor = Color.Lime;
+            btnDelete.Location = new Point(605, 50);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(75, 23);
+            btnDelete.Size = new Size(88, 34);
             btnDelete.TabIndex = 5;
             btnDelete.Text = "선택삭제";
             btnDelete.UseVisualStyleBackColor = true;
@@ -96,9 +98,11 @@
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(500, 50);
+            btnClear.Font = new Font("새굴림", 12F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            btnClear.ForeColor = Color.Lime;
+            btnClear.Location = new Point(458, 50);
             btnClear.Name = "btnClear";
-            btnClear.Size = new Size(89, 23);
+            btnClear.Size = new Size(131, 34);
             btnClear.TabIndex = 6;
             btnClear.Text = "전송기록삭제";
             btnClear.UseVisualStyleBackColor = true;
