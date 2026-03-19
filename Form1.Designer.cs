@@ -36,30 +36,33 @@
             // 
             // btnSend
             // 
-            btnSend.Location = new Point(571, 363);
+            btnSend.Font = new Font("한컴 울주 반구대 암각화체", 29.9999962F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            btnSend.ForeColor = Color.Blue;
+            btnSend.Location = new Point(571, 329);
             btnSend.Name = "btnSend";
-            btnSend.Size = new Size(75, 23);
+            btnSend.Size = new Size(122, 57);
             btnSend.TabIndex = 0;
-            btnSend.Text = "button1";
+            btnSend.Text = "전송";
             btnSend.UseVisualStyleBackColor = true;
             btnSend.Click += button1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("맑은 고딕", 30F);
+            label1.Font = new Font("Georgia", 30F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Red;
             label1.Location = new Point(73, 54);
             label1.Name = "label1";
-            label1.Size = new Size(131, 54);
+            label1.Size = new Size(330, 46);
             label1.TabIndex = 1;
-            label1.Text = "label1";
+            label1.Text = "Eocho Messenger";
             // 
             // lstHistory
             // 
             lstHistory.FormattingEnabled = true;
             lstHistory.Location = new Point(73, 116);
             lstHistory.Name = "lstHistory";
-            lstHistory.Size = new Size(573, 184);
+            lstHistory.Size = new Size(620, 184);
             lstHistory.TabIndex = 2;
             // 
             // txtInput
@@ -71,6 +74,7 @@
             // 
             // Form1
             // 
+            AcceptButton = btnSend;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);

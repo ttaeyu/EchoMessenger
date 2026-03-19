@@ -9,17 +9,19 @@ namespace EchoMessenger
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(txtInput.Text))
+            if (string.IsNullOrWhiteSpace(txtInput.Text))
             {
-                // 2. 전송 기능: TextBox의 텍스트를 ListBox의 항목(Items)으로 추가합니다.
-                lstHistory.Items.Add(txtInput.Text);
-
-                // 3. 입력창 정리: 추가 직후 TextBox의 내용을 비워(Clear) 다음 입력을 준비합니다.
-                txtInput.Clear();
-
-                // (보너스) 다음 입력을 위해 입력창에 텍스트 커서를 다시 가져다 놓습니다.
-                txtInput.Focus();
+                return; // 아무것도 하지 않고 함수 종료
             }
+
+            // (기본 기능) 리스트박스에 메시지 추가
+            lstHistory.Items.Add(txtInput.Text);
+
+            // 1. 입력창의 기존 메시지 지우기
+            txtInput.Clear();
+
+            // 2. 입력창에 입력 포커스 갖다 놓기
+            txtInput.Focus();
         }
     }
 }
