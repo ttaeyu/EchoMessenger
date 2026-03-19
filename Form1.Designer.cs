@@ -32,6 +32,7 @@
             label1 = new Label();
             lstHistory = new ListBox();
             txtInput = new TextBox();
+            lblCount = new Label();
             SuspendLayout();
             // 
             // btnSend
@@ -60,7 +61,7 @@
             // lstHistory
             // 
             lstHistory.FormattingEnabled = true;
-            lstHistory.Location = new Point(73, 116);
+            lstHistory.Location = new Point(63, 116);
             lstHistory.Name = "lstHistory";
             lstHistory.Size = new Size(620, 184);
             lstHistory.TabIndex = 2;
@@ -72,12 +73,22 @@
             txtInput.Size = new Size(469, 23);
             txtInput.TabIndex = 3;
             // 
+            // lblCount
+            // 
+            lblCount.AutoSize = true;
+            lblCount.Location = new Point(571, 389);
+            lblCount.Name = "lblCount";
+            lblCount.Size = new Size(82, 15);
+            lblCount.TabIndex = 4;
+            lblCount.Text = "현재 대화 0개";
+            // 
             // Form1
             // 
             AcceptButton = btnSend;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblCount);
             Controls.Add(txtInput);
             Controls.Add(lstHistory);
             Controls.Add(label1);
@@ -94,5 +105,6 @@
         private Label label1;
         private ListBox lstHistory;
         private TextBox txtInput;
+        private Label lblCount;
     }
 }
