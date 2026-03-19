@@ -66,5 +66,10 @@ namespace EchoMessenger
         {
 
         }
+
+        private void lblCount_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

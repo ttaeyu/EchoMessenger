@@ -78,11 +78,13 @@
             // lblCount
             // 
             lblCount.AutoSize = true;
+            lblCount.ForeColor = Color.Black;
             lblCount.Location = new Point(571, 389);
             lblCount.Name = "lblCount";
             lblCount.Size = new Size(82, 15);
             lblCount.TabIndex = 4;
             lblCount.Text = "현재 대화 0개";
+            lblCount.Click += lblCount_Click;
             // 
             // btnDelete
             // 
