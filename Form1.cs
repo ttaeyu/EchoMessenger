@@ -7,7 +7,7 @@ namespace EchoMessenger
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSend_Click23(object sender, EventArgs e)
         {
             if (txtInput.Text.Length > 50)
             {

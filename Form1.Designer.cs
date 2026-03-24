@@ -47,7 +47,7 @@
             btnSend.TabIndex = 0;
             btnSend.Text = "전송";
             btnSend.UseVisualStyleBackColor = true;
-            btnSend.Click += button1_Click;
+            btnSend.Click += btnSend_Click23;
             // 
             // label1
             // 
